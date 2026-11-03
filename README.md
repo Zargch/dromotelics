@@ -1,5 +1,7 @@
 # Proyecto Dromotelics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23901487.svg)](https://doi.org/10.5281/zenodo.23901487)
+
 **¿Cuántas generaciones necesita una IA para aprender a conducir?** Estudio experimental de neuroevolución aplicado a vehículos simulados en circuitos 2D de distinta dificultad.
 
 **[▶ Probar el simulador en el navegador](https://zargch.github.io/dromotelics/)** · [Figuras](https://zargch.github.io/dromotelics/figuras.html) · [Artículo (PDF)](articulo/Dromotelics.pdf) · [Tablas](resultados/tablas.md) · [Datos](resultados/)
@@ -62,7 +64,9 @@ La estructura es plana a propósito: GitHub Pages sirve `index.html` y `sim.js` 
 
 ## Cómo citar
 
-Ver [`CITATION.cff`](CITATION.cff). Historial de cambios en [`CHANGELOG.md`](CHANGELOG.md).
+Zarate, C. (2026). *Dromotelics: ¿cuántas generaciones necesita una IA para aprender a conducir? Estudio de neuroevolución en circuitos 2D* (versión 1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23901488
+
+Para citar siempre la versión más reciente, usa el DOI del concepto: [10.5281/zenodo.23901487](https://doi.org/10.5281/zenodo.23901487). Ver también [`CITATION.cff`](CITATION.cff). Historial de cambios en [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Licencia
 
