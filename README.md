@@ -4,7 +4,11 @@
 
 **¿Cuántas generaciones necesita una IA para aprender a conducir?** Estudio experimental de neuroevolución aplicado a vehículos simulados en circuitos 2D de distinta dificultad.
 
-**[▶ Probar el simulador en el navegador](https://zargch.github.io/dromotelics/)** · [Figuras](https://zargch.github.io/dromotelics/figuras.html) · [Artículo (PDF)](articulo/Dromotelics.pdf) · [Tablas](resultados/tablas.md) · [Datos](resultados/)
+**[▶ Probar el simulador en el navegador](https://zargch.github.io/dromotelics/)** · [Video](https://github.com/Zargch/dromotelics/releases/download/v1.1.0/Dromotelics_video.mp4) · [Figuras](https://zargch.github.io/dromotelics/figuras.html) · [Artículo (PDF)](articulo/Dromotelics.pdf) · [Tablas](resultados/tablas.md) · [Datos](resultados/)
+
+[![Video del proyecto: ¿cuántas generaciones necesita una IA para aprender a conducir? (2:42)](figuras/video_miniatura.jpg)](https://github.com/Zargch/dromotelics/releases/download/v1.1.0/Dromotelics_video.mp4)
+
+*Video explicativo (2:42, 1080p), producido por Zargch Studio. Las animaciones, simulaciones y gráficas del video usan los datos reales de este repositorio.*
 
 Cada auto es una red neuronal de 112 pesos que ve la pista con 7 sensores de distancia. Un algoritmo genético la mejora generación tras generación, sin ejemplos ni gradientes. Medimos cuántas generaciones tarda en completar la primera vuelta y en conducir de forma confiable, con 20 semillas por configuración, en 3 pistas, con 3 tamaños de población y hasta 1000 generaciones: 620 corridas en total.
 
