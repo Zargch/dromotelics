@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Figuras del estudio</title>
+<style>
+  body { margin: 0; background: #fff; color: #1f2328; font: 14px/1.4 "Segoe UI", system-ui, sans-serif; }
+  .fig { width: 1240px; padding: 18px 20px 14px; box-sizing: border-box; border-bottom: 1px solid #eee; }
+  .fig h2 { font-size: 17px; margin: 0 0 2px; }
+  .fig p { margin: 0 0 10px; color: #57606a; font-size: 13px; }
+  .row { display: flex; gap: 14px; }
+  .panel { flex: 1; }
+  .panel b { display: block; font-size: 14px; margin-bottom: 4px; }
+  canvas { width: 100%; height: auto; display: block; }
+  .legend { display: flex; gap: 16px; align-items: center; font-size: 12px; color: #57606a; margin-top: 8px; flex-wrap: wrap; }
+  .sw { display: inline-block; width: 22px; height: 4px; vertical-align: middle; margin-right: 5px; border-radius: 2px; }
+  .bar { display: inline-block; width: 160px; height: 10px; vertical-align: middle; margin: 0 6px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<div class="fig" id="f-pistas">
+  <h2>Figura 1. Los tres circuitos del estudio</h2>
+  <p>La línea discontinua es la meta; la flecha indica el sentido de carrera. Misma escala en los tres paneles.</p>
+  <div class="row" id="r-pistas"></div>
+</div>
+<div class="fig" id="f-tray">
+  <h2>Figura 2. Cómo mejora la trayectoria del mejor auto generación tras generación</h2>
+  <p>Mejor auto de cada generación indicada, en la corrida de ejemplo (población 50, primera semilla). La × marca dónde chocó.</p>
+  <div class="row" id="r-tray"></div>
+  <div class="legend" id="l-tray"></div>
+</div>
+<div class="fig" id="f-choques">
+  <h2>Figura 3. Dónde chocan los autos mientras aprenden</h2>
+  <p>Choques contra el muro antes de la primera vuelta completa, sumando todas las corridas del experimento principal, en 60 tramos de pista.</p>
+  <div class="row" id="r-choques"></div>
+  <div class="legend">Pocos choques<span class="bar" style="background:linear-gradient(90deg,#e8e8e8,#fdd49e,#fc8d59,#d7301f,#7f0000)"></span>Muchos choques</div>
+</div>
+<div class="fig" id="f-campeon">
+  <h2>Figura 4. Línea de carrera del campeón tras 1000 generaciones</h2>
+  <p>Mejor controlador final de cada pista (población 50), coloreado por velocidad. Acelera a fondo en las rectas, frena antes de las horquillas y pasa muy pegado a los muros.</p>
+  <div class="row" id="r-campeon"></div>
+  <div class="legend">Lento<span class="bar" style="background:linear-gradient(90deg,#313695,#4575b4,#74add1,#fee090,#f46d43,#a50026)"></span>Rápido (280 px/s)</div>
+</div>
+<script>
+const NAMES = { facil: 'Fácil', media: 'Media', dificil: 'Difícil' };
+const KEYS = ['facil', 'media', 'dificil'];
+const FIGS = {};
+function panel(rowId, title) {
+  (FIGS[rowId] = FIGS[rowId] || []).push(title);
+  const d = document.createElement('div'); d.className = 'panel';
+  d.innerHTML = `<b>${title}</b>`;
+  const c = document.createElement('canvas'); c.width = 1000; c.height = 650; d.appendChild(c);
+  document.getElementById(rowId).appendChild(d);
+  return c.getContext('2d');
+}
+function poly(ctx, arr) { ctx.beginPath(); arr.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath(); }
+function drawTrack(ctx, t, opts = {}) {
+  ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, 1000, 650);
+  ctx.lineJoin = 'round';
+  poly(ctx, t.pts); ctx.strokeStyle = opts.road || '#e9ebee'; ctx.lineWidth = t.halfWidth * 2; ctx.stroke();
+  poly(ctx, t.left); ctx.strokeStyle = '#57606a'; ctx.lineWidth = 2.5; ctx.stroke();
+  poly(ctx, t.right); ctx.stroke();
+  const L = t.left[0], R = t.right[0];
+  ctx.strokeStyle = '#1f2328'; ctx.lineWidth = 5; ctx.setLineDash([6, 6]);
+  ctx.beginPath(); ctx.moveTo(L[0], L[1]); ctx.lineTo(R[0], R[1]); ctx.stroke(); ctx.setLineDash([]);
+  // flecha de sentido
+  const a = t.pts[4], b = t.pts[9], ang = Math.atan2(b[1] - a[1], b[0] - a[0]);
+  ctx.save(); ctx.translate(b[0], b[1]); ctx.rotate(ang); ctx.fillStyle = '#1f2328';
+  ctx.beginPath(); ctx.moveTo(14, 0); ctx.lineTo(-8, -9); ctx.lineTo(-8, 9); ctx.closePath(); ctx.fill(); ctx.restore();
+}
+function lerpColor(stops, x) {
+  x = Math.max(0, Math.min(1, x)) * (stops.length - 1);
+  const i = Math.min(stops.length - 2, Math.floor(x)), f = x - i, h = s => [1, 3, 5].map(k => parseInt(s.slice(k, k + 2), 16));
+  const A = h(stops[i]), B = h(stops[i + 1]);
+  return `rgb(${A.map((v, k) => Math.round(v + (B[k] - v) * f)).join(',')})`;
+}
+fetch('resultados/figdata.json').then(r => r.json()).then(F => {
+  for (const k of KEYS) drawTrack(panel('r-pistas', NAMES[k]), F.pistas[k]);
+
+  // Figura 2: trayectorias
+  const SHOW = [1, 2, 5, 10, 25];
+  const blues = ['#c6dbef', '#9ecae1', '#6baed6', '#3182bd', '#08519c', '#08306b'];
+  for (const k of KEYS) {
+    const S = F.snaps[k]; if (!S) continue;
+    const ctx = panel('r-tray', `${NAMES[k]} · 1ª vuelta en la generación ${S.firstLap}`);
+    drawTrack(ctx, F.pistas[k]);
+    let gens = SHOW.filter(g => g <= S.firstLap); if (!gens.includes(S.firstLap)) gens.push(S.firstLap);
+    gens = gens.slice(-6);
+    gens.forEach((g, i) => {
+      const s = S.snaps.find(x => x.gen === g); if (!s || !s.path.length) return;
+      const col = g === S.firstLap ? blues.at(-1) : blues[Math.round(i / Math.max(1, gens.length - 1) * (blues.length - 2))];
+      ctx.strokeStyle = col; ctx.lineWidth = g === S.firstLap ? 5 : 3.5;
+      ctx.beginPath(); s.path.forEach((p, j) => j ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.stroke();
+      if (s.progress < 1) { const e = s.path.at(-1); ctx.strokeStyle = col; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(e[0] - 9, e[1] - 9); ctx.lineTo(e[0] + 9, e[1] + 9); ctx.moveTo(e[0] + 9, e[1] - 9); ctx.lineTo(e[0] - 9, e[1] + 9); ctx.stroke(); }
+    });
+  }
+  document.getElementById('l-tray').innerHTML = ['Generaciones tempranas', 'Intermedias', 'Generación de la 1ª vuelta'].map((t, i) => `<span><span class="sw" style="background:${[blues[0], blues[3], blues[5]][i]}"></span>${t}</span>`).join('');
+
+  // Figura 3: mapa de choques
+  const heat = ['#e8e8e8', '#fdd49e', '#fc8d59', '#d7301f', '#7f0000'];
+  for (const k of KEYS) {
+    const t = F.pistas[k], bins = F.choques[k].early, max = Math.max(1, ...bins), total = bins.reduce((s, x) => s + x, 0);
+    const ctx = panel('r-choques', `${NAMES[k]} · ${total.toLocaleString('es')} choques`);
+    drawTrack(ctx, t, { road: '#fff' });
+    const N = t.pts.length;
+    for (let i = 0; i < N; i++) {
+      const b = Math.min(59, Math.floor(i / N * 60)), v = Math.sqrt(bins[b] / max);
+      const p = t.pts[i], q2 = t.pts[(i + 2) % N]; // tramos solapados: color continuo
+      ctx.strokeStyle = lerpColor(heat, v); ctx.lineWidth = t.halfWidth * 2 - 4; ctx.lineCap = 'butt';
+      ctx.beginPath(); ctx.moveTo(p[0], p[1]); ctx.lineTo(q2[0], q2[1]); ctx.stroke();
+    }
+    poly(ctx, t.left); ctx.strokeStyle = '#57606a'; ctx.lineWidth = 2.5; ctx.stroke(); poly(ctx, t.right); ctx.stroke();
+  }
+
+  // Figura 4: línea de carrera coloreada por velocidad
+  const spd = ['#313695', '#4575b4', '#74add1', '#fee090', '#f46d43', '#a50026'];
+  for (const k of KEYS) {
+    const C = F.campeon[k]; if (!C) continue;
+    const ctx = panel('r-campeon', `${NAMES[k]} · vuelta en ${C.time.toFixed(2)} s`);
+    drawTrack(ctx, F.pistas[k]);
+    ctx.lineWidth = 6; ctx.lineCap = 'round';
+    for (let i = 1; i < C.path.length; i++) {
+      const a = C.path[i - 1], b = C.path[i], v = Math.hypot(b[0] - a[0], b[1] - a[1]) * 20; // 3 pasos = 1/20 s
+      ctx.strokeStyle = lerpColor(spd, v / 280);
+      ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+    }
+  }
+  document.body.dataset.ready = '1';
+  window.LEGENDS = {
+    'r-tray': { lines: [['Generaciones tempranas', blues[0]], ['Intermedias', blues[3]], ['Generación de la 1ª vuelta', blues[5]]] },
+    'r-choques': { grad: [heat, 'Pocos choques', 'Muchos choques'] },
+    'r-campeon': { grad: [spd, 'Lento', 'Rápido (280 px/s)'] }
+  };
+});
+
+// Exporta cada figura como PNG de alta resolución (título + 3 paneles + leyenda)
+async function exportAll() {
+  const out = [];
+  for (const fig of document.querySelectorAll('.fig')) {
+    const row = fig.querySelector('.row'), canv = [...row.querySelectorAll('canvas')], labels = [...row.querySelectorAll('b')].map(b => b.textContent);
+    const lg = (window.LEGENDS || {})[row.id];
+    const W = 3 * 1000 + 2 * 60 + 2 * 50, H = 120 + 60 + 650 + (lg ? 90 : 20);
+    const c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d');
+    x.fillStyle = '#fff'; x.fillRect(0, 0, W, H);
+    x.fillStyle = '#1f2328'; x.font = '600 46px Segoe UI, sans-serif'; x.fillText(fig.querySelector('h2').textContent, 50, 64);
+    x.fillStyle = '#57606a'; x.font = '30px Segoe UI, sans-serif'; x.fillText(fig.querySelector('p').textContent, 50, 108);
+    canv.forEach((cv, i) => { const px = 50 + i * 1060; x.fillStyle = '#1f2328'; x.font = '600 36px Segoe UI, sans-serif'; x.fillText(labels[i], px, 165); x.drawImage(cv, px, 180); });
+    if (lg) {
+      let lx = 50; const ly = 180 + 650 + 50; x.font = '30px Segoe UI, sans-serif';
+      if (lg.lines) for (const [t, col] of lg.lines) { x.fillStyle = col; x.fillRect(lx, ly - 12, 60, 10); x.fillStyle = '#57606a'; x.fillText(t, lx + 75, ly); lx += 75 + x.measureText(t).width + 60; }
+      if (lg.grad) { const [stops, a, b] = lg.grad; x.fillStyle = '#57606a'; x.fillText(a, lx, ly); lx += x.measureText(a).width + 20; const g = x.createLinearGradient(lx, 0, lx + 400, 0); stops.forEach((s, i) => g.addColorStop(i / (stops.length - 1), s)); x.fillStyle = g; x.fillRect(lx, ly - 24, 400, 26); lx += 420; x.fillStyle = '#57606a'; x.fillText(b, lx, ly); }
+    }
+    const nombre = fig.id.replace('f-', 'fig_') + '.png';
+    await fetch('/guardar?nombre=' + nombre, { method: 'POST', body: c.toDataURL('image/png') });
+    out.push(nombre);
+  }
+  document.getElementById('exp').textContent = 'Exportadas: ' + out.join(', ');
+}
+</script>
+<button id="exp" onclick="exportAll()" style="margin:16px 20px;padding:8px 14px">Exportar figuras PNG</button>
+<script>if (!['localhost', '127.0.0.1'].includes(location.hostname)) document.getElementById('exp').remove(); // solo con servidor.js</script>
+</body>
+</html>

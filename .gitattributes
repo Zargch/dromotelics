@@ -1,0 +1,4 @@
+# Finales de línea LF en todos los sistemas: mantiene las huellas MD5/SHA-256 publicadas
+* text=auto eol=lf
+*.png binary
+*.pdf binary

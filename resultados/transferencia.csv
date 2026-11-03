@@ -1,0 +1,10 @@
+entrenada,probada,vuelta1,cinco,progresoMediano
+facil,facil,1,0.15,1.828
+facil,media,0,0,0.038
+facil,dificil,0,0,0.015
+media,facil,0.95,0.95,5
+media,media,0.95,0.5,4.696
+media,dificil,0,0,0.038
+dificil,facil,1,1,5
+dificil,media,0.25,0.15,0.473
+dificil,dificil,0.75,0.15,1.567

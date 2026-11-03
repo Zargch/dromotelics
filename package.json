@@ -1,0 +1,23 @@
+{
+  "name": "dromotelics",
+  "version": "1.1.0",
+  "description": "Estudio experimental de neuroevolución: cuántas generaciones necesita un algoritmo genético para que una red neuronal aprenda a conducir un vehículo simulado en circuitos 2D",
+  "license": "MIT",
+  "author": "Carlos Zarate (Zargch)",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "servidor": "node servidor.js",
+    "estudio": "node estudio.js 20 1000",
+    "estudio:f": "node estudio.js 20 1000 laps2",
+    "prueba": "node estudio.js 2 100",
+    "analisis": "node analisis.js",
+    "robustez": "node robustez.js",
+    "tablas": "node tablas.js",
+    "resultados": "node analisis.js && node robustez.js && node tablas.js",
+    "piloto": "node experimento.js"
+  },
+  "keywords": ["neuroevolución", "algoritmo genético", "red neuronal", "simulación 2D", "vehículo simulado"]
+}

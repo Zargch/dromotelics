@@ -1,0 +1,3029 @@
+{
+ "generado": "2026-11-03T00:37:26.659Z",
+ "pistas": {
+  "facil": {
+   "longitud": 2213.2,
+   "ancho": 90,
+   "radioMin": 112.3,
+   "giro": 360
+  },
+  "media": {
+   "longitud": 3134.8,
+   "ancho": 60,
+   "radioMin": 31.9,
+   "giro": 1498.4
+  },
+  "dificil": {
+   "longitud": 3874.1,
+   "ancho": 44,
+   "radioMin": 23.5,
+   "giro": 2498.3
+  }
+ },
+ "principal": {
+  "facil_20": {
+   "pista": "facil",
+   "pop": 20,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 2,
+    "p25": 1,
+    "p75": 3,
+    "min": 1,
+    "max": 3,
+    "ic95": [
+     1,
+     2.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 40,
+    "p25": 20,
+    "p75": 60,
+    "min": 20,
+    "max": 60,
+    "ic95": [
+     20,
+     50
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 39
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 8,
+    "p25": 7,
+    "p75": 9.3,
+    "min": 6,
+    "max": 11,
+    "ic95": [
+     7,
+     9
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 8.2
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 26.5,
+    "p25": 19,
+    "p75": 40.3,
+    "min": 11,
+    "max": 145,
+    "ic95": [
+     19.5,
+     36.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 35.6
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 2,
+    "p25": 1,
+    "p75": 3,
+    "min": 1,
+    "max": 6,
+    "ic95": [
+     1,
+     3
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2.2
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 40,
+    "p25": 20,
+    "p75": 60,
+    "min": 20,
+    "max": 120,
+    "ic95": [
+     20,
+     60
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 43
+   },
+   "vueltaMejor": {
+    "g10": 7.7,
+    "g50": 7.6,
+    "g100": 7.6,
+    "g250": 7.6,
+    "g500": 7.6,
+    "g1000": 7.6,
+    "min1000": 7.6
+   },
+   "finalCampeon5vueltas": 10,
+   "finalTerminan": 0.65,
+   "segundosPorCorrida": 49
+  },
+  "facil_50": {
+   "pista": "facil",
+   "pop": 50,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 2,
+    "min": 1,
+    "max": 3,
+    "ic95": [
+     1,
+     2
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.4
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 50,
+    "p25": 50,
+    "p75": 100,
+    "min": 50,
+    "max": 150,
+    "ic95": [
+     50,
+     100
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 70
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 11.5,
+    "p25": 10,
+    "p75": 14,
+    "min": 8,
+    "max": 22,
+    "ic95": [
+     10.5,
+     14
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 12.7
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 7,
+    "tasa": 0.35,
+    "mediana": null,
+    "p25": 621.8,
+    "p75": null,
+    "min": 70,
+    "max": 747,
+    "ic95": [
+     696,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.181,
+     0.567
+    ],
+    "media_exitos": 413.1
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 2,
+    "min": 1,
+    "max": 3,
+    "ic95": [
+     1,
+     2
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.4
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 50,
+    "p25": 50,
+    "p75": 100,
+    "min": 50,
+    "max": 150,
+    "ic95": [
+     50,
+     100
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 70
+   },
+   "vueltaMejor": {
+    "g10": 7.7,
+    "g50": 7.6,
+    "g100": 7.6,
+    "g250": 7.6,
+    "g500": 7.6,
+    "g1000": 7.6,
+    "min1000": 7.6
+   },
+   "finalCampeon5vueltas": 3,
+   "finalTerminan": 0.69,
+   "segundosPorCorrida": 120.8
+  },
+  "facil_100": {
+   "pista": "facil",
+   "pop": 100,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 1,
+    "min": 1,
+    "max": 2,
+    "ic95": [
+     1,
+     1
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.1
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 100,
+    "p25": 100,
+    "p75": 100,
+    "min": 100,
+    "max": 200,
+    "ic95": [
+     100,
+     100
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 105
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 16.5,
+    "p25": 14.8,
+    "p75": 18.5,
+    "min": 12,
+    "max": 29,
+    "ic95": [
+     15.5,
+     17.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 17.6
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 1,
+    "tasa": 0.05,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 914,
+    "max": 914,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.009,
+     0.236
+    ],
+    "media_exitos": 914
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 1,
+    "min": 1,
+    "max": 2,
+    "ic95": [
+     1,
+     1
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.1
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 100,
+    "p25": 100,
+    "p75": 100,
+    "min": 100,
+    "max": 200,
+    "ic95": [
+     100,
+     100
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 105
+   },
+   "vueltaMejor": {
+    "g10": 7.7,
+    "g50": 7.6,
+    "g100": 7.6,
+    "g250": 7.6,
+    "g500": 7.6,
+    "g1000": 7.6,
+    "min1000": 7.6
+   },
+   "finalCampeon5vueltas": 3,
+   "finalTerminan": 0.675,
+   "segundosPorCorrida": 242.6
+  },
+  "media_20": {
+   "pista": "media",
+   "pop": 20,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 39,
+    "p25": 13.5,
+    "p75": 273.8,
+    "min": 7,
+    "max": 347,
+    "ic95": [
+     14,
+     217
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 86.1
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 780,
+    "p25": 270,
+    "p75": 5475,
+    "min": 140,
+    "max": 6940,
+    "ic95": [
+     280,
+     4340
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 1721.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 86,
+    "p25": 30,
+    "p75": 524,
+    "min": 15,
+    "max": 823,
+    "ic95": [
+     33,
+     470.5
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 194.2
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 8,
+    "tasa": 0.4,
+    "mediana": null,
+    "p25": 129.3,
+    "p75": null,
+    "min": 35,
+    "max": 299,
+    "ic95": [
+     173,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.219,
+     0.613
+    ],
+    "media_exitos": 124.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 48.5,
+    "p25": 17,
+    "p75": 349.8,
+    "min": 7,
+    "max": 415,
+    "ic95": [
+     18.5,
+     314
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 109
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 970,
+    "p25": 340,
+    "p75": 6995,
+    "min": 140,
+    "max": 8300,
+    "ic95": [
+     370,
+     6280
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 2180
+   },
+   "vueltaMejor": {
+    "g10": 15.3,
+    "g50": 12.8,
+    "g100": 11.9,
+    "g250": 11.6,
+    "g500": 11.4,
+    "g1000": 11.1,
+    "min1000": 11
+   },
+   "finalCampeon5vueltas": 12,
+   "finalTerminan": 0.4,
+   "segundosPorCorrida": 67.3
+  },
+  "media_50": {
+   "pista": "media",
+   "pop": 50,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 23.8,
+    "min": 6,
+    "max": 56,
+    "ic95": [
+     12.5,
+     21
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 18.4
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 800,
+    "p25": 550,
+    "p75": 1187.5,
+    "min": 300,
+    "max": 2800,
+    "ic95": [
+     625,
+     1075.6
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 921.1
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 44,
+    "p25": 30.8,
+    "p75": 57.5,
+    "min": 23,
+    "max": 95,
+    "ic95": [
+     31.5,
+     53
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 44.9
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 4,
+    "tasa": 0.2,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 127,
+    "max": 676,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.081,
+     0.416
+    ],
+    "media_exitos": 332
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 26.8,
+    "min": 6,
+    "max": 78,
+    "ic95": [
+     12.5,
+     24.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 20.3
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 800,
+    "p25": 550,
+    "p75": 1337.5,
+    "min": 300,
+    "max": 3900,
+    "ic95": [
+     625,
+     1225
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 1015.8
+   },
+   "vueltaMejor": {
+    "g10": 18.4,
+    "g50": 12.1,
+    "g100": 11.6,
+    "g250": 11.3,
+    "g500": 11,
+    "g1000": 11,
+    "min1000": 10.9
+   },
+   "finalCampeon5vueltas": 10,
+   "finalTerminan": 0.4,
+   "segundosPorCorrida": 171
+  },
+  "media_100": {
+   "pista": "media",
+   "pop": 100,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 14,
+    "p25": 8.8,
+    "p75": 21.5,
+    "min": 2,
+    "max": 62,
+    "ic95": [
+     9.5,
+     19.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 17.7
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1400,
+    "p25": 875,
+    "p75": 2150,
+    "min": 200,
+    "max": 6200,
+    "ic95": [
+     950,
+     2000
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1765
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 51,
+    "p25": 41,
+    "p75": 59.5,
+    "min": 27,
+    "max": 508,
+    "ic95": [
+     42,
+     57.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 71.7
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 0,
+    "tasa": 0,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": null,
+    "max": null,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0,
+     0.161
+    ],
+    "media_exitos": null
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 15.5,
+    "p25": 8.8,
+    "p75": 26.5,
+    "min": 2,
+    "max": 97,
+    "ic95": [
+     9.5,
+     25
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 22.4
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1550,
+    "p25": 875,
+    "p75": 2650,
+    "min": 200,
+    "max": 9700,
+    "ic95": [
+     950,
+     2500
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2235
+   },
+   "vueltaMejor": {
+    "g10": 23,
+    "g50": 11.9,
+    "g100": 11.5,
+    "g250": 11.4,
+    "g500": 11,
+    "g1000": 11,
+    "min1000": 10.9
+   },
+   "finalCampeon5vueltas": 13,
+   "finalTerminan": 0.485,
+   "segundosPorCorrida": 361
+  },
+  "dificil_20": {
+   "pista": "dificil",
+   "pop": 20,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 46.5,
+    "p25": 28,
+    "p75": 109.8,
+    "min": 18,
+    "max": 857,
+    "ic95": [
+     29,
+     89.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 121.8
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 930,
+    "p25": 560,
+    "p75": 2195,
+    "min": 360,
+    "max": 17140,
+    "ic95": [
+     580,
+     1790
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 2436.8
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 90.5,
+    "p25": 65.5,
+    "p75": 280,
+    "min": 36,
+    "max": 900,
+    "ic95": [
+     70,
+     236
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 166.1
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 0,
+    "tasa": 0,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": null,
+    "max": null,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0,
+     0.161
+    ],
+    "media_exitos": null
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 48.5,
+    "p25": 29.5,
+    "p75": 128.3,
+    "min": 18,
+    "max": 937,
+    "ic95": [
+     32,
+     93.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 146.5
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 970,
+    "p25": 590,
+    "p75": 2565,
+    "min": 360,
+    "max": 18740,
+    "ic95": [
+     640,
+     1874
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 2930.5
+   },
+   "vueltaMejor": {
+    "g10": null,
+    "g50": 24.3,
+    "g100": 18.5,
+    "g250": 16.1,
+    "g500": 15.7,
+    "g1000": 15.5,
+    "min1000": 15.2
+   },
+   "finalCampeon5vueltas": 4,
+   "finalTerminan": 0.275,
+   "segundosPorCorrida": 64.2
+  },
+  "dificil_50": {
+   "pista": "dificil",
+   "pop": 50,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 52.8,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     25,
+     46
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40.4
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1550,
+    "p25": 1175,
+    "p75": 2637.5,
+    "min": 600,
+    "max": 6750,
+    "ic95": [
+     1250,
+     2303.7
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2020
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 16,
+    "tasa": 0.8,
+    "mediana": 130,
+    "p25": 75.5,
+    "p75": 192.3,
+    "min": 30,
+    "max": 196,
+    "ic95": [
+     79,
+     188.5
+    ],
+    "tasa_ic95": [
+     0.584,
+     0.919
+    ],
+    "media_exitos": 110.3
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 0,
+    "tasa": 0,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": null,
+    "max": null,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0,
+     0.161
+    ],
+    "media_exitos": null
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 58.3,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     24,
+     51
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 41.3
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1550,
+    "p25": 1175,
+    "p75": 2912.5,
+    "min": 600,
+    "max": 6750,
+    "ic95": [
+     1250,
+     2550
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2062.5
+   },
+   "vueltaMejor": {
+    "g10": null,
+    "g50": 19,
+    "g100": 16.9,
+    "g250": 15.6,
+    "g500": 15.4,
+    "g1000": 15.3,
+    "min1000": 15.2
+   },
+   "finalCampeon5vueltas": 2,
+   "finalTerminan": 0.3,
+   "segundosPorCorrida": 159.5
+  },
+  "dificil_100": {
+   "pista": "dificil",
+   "pop": 100,
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 27.5,
+    "p25": 21,
+    "p75": 38.3,
+    "min": 16,
+    "max": 47,
+    "ic95": [
+     21.5,
+     37.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 29.7
+   },
+   "primeraVueltaEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 2750,
+    "p25": 2100,
+    "p75": 3825,
+    "min": 1600,
+    "max": 4700,
+    "ic95": [
+     2150,
+     3750
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 2970
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 10,
+    "tasa": 0.5,
+    "mediana": null,
+    "p25": 144.3,
+    "p75": null,
+    "min": 66,
+    "max": 710,
+    "ic95": [
+     162,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.299,
+     0.701
+    ],
+    "media_exitos": 226.6
+   },
+   "noventa": {
+    "n": 20,
+    "exito": 0,
+    "tasa": 0,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": null,
+    "max": null,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0,
+     0.161
+    ],
+    "media_exitos": null
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 22.8,
+    "p75": 38.3,
+    "min": 16,
+    "max": 47,
+    "ic95": [
+     24.5,
+     37.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 31.8
+   },
+   "confiableEvals": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 3100,
+    "p25": 2275,
+    "p75": 3825,
+    "min": 1600,
+    "max": 4700,
+    "ic95": [
+     2450,
+     3750
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 3180
+   },
+   "vueltaMejor": {
+    "g10": null,
+    "g50": 19.2,
+    "g100": 16.1,
+    "g250": 15.4,
+    "g500": 15.3,
+    "g1000": 15.2,
+    "min1000": 15.2
+   },
+   "finalCampeon5vueltas": 3,
+   "finalTerminan": 0.275,
+   "segundosPorCorrida": 296.2
+  }
+ },
+ "pruebas": {
+  "facil: pop20 vs pop50 (1ª vuelta, generaciones)": {
+   "U": 274.5,
+   "z": 2.204,
+   "p": 0.028,
+   "efecto": 0.686,
+   "pHolm": 0.385,
+   "significativaHolm": false
+  },
+  "facil: pop50 vs pop100 (1ª vuelta, generaciones)": {
+   "U": 260.5,
+   "z": 2.355,
+   "p": 0.019,
+   "efecto": 0.651,
+   "pHolm": 0.278,
+   "significativaHolm": false
+  },
+  "facil: pop20 vs pop100 (1ª vuelta, evaluaciones)": {
+   "U": 0,
+   "z": -5.769,
+   "p": "<0.0001",
+   "efecto": 0,
+   "pHolm": "<0.0001",
+   "significativaHolm": true
+  },
+  "media: pop20 vs pop50 (1ª vuelta, generaciones)": {
+   "U": 259.5,
+   "z": 1.612,
+   "p": 0.107,
+   "efecto": 0.649,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "media: pop50 vs pop100 (1ª vuelta, generaciones)": {
+   "U": 231,
+   "z": 0.84,
+   "p": 0.401,
+   "efecto": 0.578,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "media: pop20 vs pop100 (1ª vuelta, evaluaciones)": {
+   "U": 179,
+   "z": -0.568,
+   "p": 0.57,
+   "efecto": 0.448,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: pop20 vs pop50 (1ª vuelta, generaciones)": {
+   "U": 263.5,
+   "z": 1.718,
+   "p": 0.086,
+   "efecto": 0.659,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: pop50 vs pop100 (1ª vuelta, generaciones)": {
+   "U": 239,
+   "z": 1.056,
+   "p": 0.291,
+   "efecto": 0.598,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: pop20 vs pop100 (1ª vuelta, evaluaciones)": {
+   "U": 85,
+   "z": -3.112,
+   "p": 0.002,
+   "efecto": 0.213,
+   "pHolm": 0.033,
+   "significativaHolm": true
+  },
+  "pop50: fácil vs media (1ª vuelta)": {
+   "U": 0,
+   "z": -5.516,
+   "p": "<0.0001",
+   "efecto": 0,
+   "pHolm": "<0.0001",
+   "significativaHolm": true
+  },
+  "pop50: media vs difícil (1ª vuelta)": {
+   "U": 83,
+   "z": -3.167,
+   "p": 0.002,
+   "efecto": 0.208,
+   "pHolm": 0.029,
+   "significativaHolm": true
+  },
+  "pop50: media vs difícil (confiable)": {
+   "U": 94,
+   "z": -2.869,
+   "p": 0.004,
+   "efecto": 0.235,
+   "pHolm": 0.07,
+   "significativaHolm": false
+  },
+  "facil: 1 vuelta vs 2 vueltas (1ª vuelta, generaciones)": {
+   "U": 200,
+   "z": 0,
+   "p": 1,
+   "efecto": 0.5,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "facil: 1 vuelta vs 2 vueltas (vueltas del campeón final)": {
+   "U": 72,
+   "z": -3.598,
+   "p": "<0.001",
+   "efecto": 0.18,
+   "pHolm": 0.007,
+   "significativaHolm": true
+  },
+  "media: 1 vuelta vs 2 vueltas (1ª vuelta, generaciones)": {
+   "U": 200,
+   "z": 0,
+   "p": 1,
+   "efecto": 0.5,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "media: 1 vuelta vs 2 vueltas (vueltas del campeón final)": {
+   "U": 150,
+   "z": -1.532,
+   "p": 0.125,
+   "efecto": 0.375,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: 1 vuelta vs 2 vueltas (1ª vuelta, generaciones)": {
+   "U": 202,
+   "z": 0.054,
+   "p": 0.957,
+   "efecto": 0.505,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: 1 vuelta vs 2 vueltas (vueltas del campeón final)": {
+   "U": 76,
+   "z": -3.491,
+   "p": "<0.001",
+   "efecto": 0.19,
+   "pHolm": 0.01,
+   "significativaHolm": true
+  },
+  "media: mutación 0,02 vs 0,4 (1ª vuelta)": {
+   "U": 189,
+   "z": -0.298,
+   "p": 0.766,
+   "efecto": 0.473,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "media: mutación 0,02 vs 0,4 (50% termina)": {
+   "U": 56,
+   "z": -3.937,
+   "p": "<0.0001",
+   "efecto": 0.14,
+   "pHolm": 0.002,
+   "significativaHolm": true
+  },
+  "media: 3 vs 10 neuronas ocultas (1ª vuelta)": {
+   "U": 276.5,
+   "z": 2.072,
+   "p": 0.038,
+   "efecto": 0.691,
+   "pHolm": 0.497,
+   "significativaHolm": false
+  },
+  "media: 10 vs 40 neuronas ocultas (50% termina)": {
+   "U": 109,
+   "z": -2.464,
+   "p": 0.014,
+   "efecto": 0.273,
+   "pHolm": 0.22,
+   "significativaHolm": false
+  },
+  "dificil: mutación 0,02 vs 0,4 (1ª vuelta)": {
+   "U": 175.5,
+   "z": -0.663,
+   "p": 0.507,
+   "efecto": 0.439,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: mutación 0,02 vs 0,4 (50% termina)": {
+   "U": 11,
+   "z": -5.41,
+   "p": "<0.0001",
+   "efecto": 0.028,
+   "pHolm": "<0.0001",
+   "significativaHolm": true
+  },
+  "dificil: 3 vs 10 neuronas ocultas (1ª vuelta)": {
+   "U": 254,
+   "z": 1.461,
+   "p": 0.144,
+   "efecto": 0.635,
+   "pHolm": 1,
+   "significativaHolm": false
+  },
+  "dificil: 10 vs 40 neuronas ocultas (50% termina)": {
+   "U": 46,
+   "z": -4.628,
+   "p": "<0.0001",
+   "efecto": 0.115,
+   "pHolm": "<0.0001",
+   "significativaHolm": true
+  },
+  "facil: evolución pop50 vs aleatoria (evaluaciones hasta 1ª vuelta)": {
+   "U": 361,
+   "z": 4.442,
+   "p": "<0.0001",
+   "efecto": 0.903,
+   "pHolm": "<0.001",
+   "significativaHolm": true
+  },
+  "media: evolución pop50 vs aleatoria (evaluaciones hasta 1ª vuelta)": {
+   "U": 64,
+   "z": -3.68,
+   "p": "<0.001",
+   "efecto": 0.16,
+   "pHolm": 0.005,
+   "significativaHolm": true
+  },
+  "dificil: evolución pop50 vs aleatoria (evaluaciones hasta 1ª vuelta)": {
+   "U": 5,
+   "z": -5.42,
+   "p": "<0.0001",
+   "efecto": 0.013,
+   "pHolm": "<0.0001",
+   "significativaHolm": true
+  }
+ },
+ "mutacion": {
+  "media_0.02": {
+   "pista": "media",
+   "mutacion": 0.02,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 18.5,
+    "p25": 13.8,
+    "p75": 31,
+    "min": 9,
+    "max": 88,
+    "ic95": [
+     14,
+     29
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 23.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 20,
+    "p25": 14.8,
+    "p75": 31.3,
+    "min": 11,
+    "max": 91,
+    "ic95": [
+     15.5,
+     29
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 25.1
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 36.5,
+    "p25": 28.3,
+    "p75": 51.5,
+    "min": 20,
+    "max": 127,
+    "ic95": [
+     29.5,
+     43.5
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 43.2
+   }
+  },
+  "media_0.05": {
+   "pista": "media",
+   "mutacion": 0.05,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 23,
+    "p25": 17,
+    "p75": 45.5,
+    "min": 8,
+    "max": 207,
+    "ic95": [
+     17.5,
+     29
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 39.6
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 24.5,
+    "p25": 17,
+    "p75": 54.5,
+    "min": 8,
+    "max": 215,
+    "ic95": [
+     18,
+     36
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 42.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 44,
+    "p25": 31.3,
+    "p75": 85,
+    "min": 24,
+    "max": 238,
+    "ic95": [
+     33,
+     64.5
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 64.5
+   }
+  },
+  "media_0.1": {
+   "pista": "media",
+   "mutacion": 0.1,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 23.8,
+    "min": 6,
+    "max": 56,
+    "ic95": [
+     12.5,
+     21
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 18.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 26.8,
+    "min": 6,
+    "max": 78,
+    "ic95": [
+     12.5,
+     24.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 20.3
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 44,
+    "p25": 30.8,
+    "p75": 57.5,
+    "min": 23,
+    "max": 95,
+    "ic95": [
+     31.5,
+     53
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 44.9
+   }
+  },
+  "media_0.2": {
+   "pista": "media",
+   "mutacion": 0.2,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 19.5,
+    "p25": 16.8,
+    "p75": 25,
+    "min": 8,
+    "max": 55,
+    "ic95": [
+     17,
+     24
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 21.5
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 20.5,
+    "p25": 17,
+    "p75": 25.3,
+    "min": 8,
+    "max": 83,
+    "ic95": [
+     17.5,
+     25
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 24.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 66,
+    "p25": 56,
+    "p75": 93.8,
+    "min": 28,
+    "max": 161,
+    "ic95": [
+     57.5,
+     90
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 77.5
+   }
+  },
+  "media_0.4": {
+   "pista": "media",
+   "mutacion": 0.4,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 21.5,
+    "p25": 15.5,
+    "p75": 31,
+    "min": 10,
+    "max": 58,
+    "ic95": [
+     16.5,
+     29
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 25.7
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 21.5,
+    "p25": 15.5,
+    "p75": 35,
+    "min": 10,
+    "max": 69,
+    "ic95": [
+     16.5,
+     32.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 27.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 11,
+    "tasa": 0.55,
+    "mediana": 203,
+    "p25": 64.3,
+    "p75": null,
+    "min": 48,
+    "max": 275,
+    "ic95": [
+     67,
+     ">300"
+    ],
+    "tasa_ic95": [
+     0.342,
+     0.742
+    ],
+    "media_exitos": 87.9
+   }
+  },
+  "dificil_0.02": {
+   "pista": "dificil",
+   "mutacion": 0.02,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 35,
+    "p25": 20.8,
+    "p75": 53.3,
+    "min": 13,
+    "max": 86,
+    "ic95": [
+     22,
+     50.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 38.3
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 38.5,
+    "p25": 20.8,
+    "p75": 56,
+    "min": 13,
+    "max": 86,
+    "ic95": [
+     22,
+     53
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 39.5
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 52,
+    "p25": 34,
+    "p75": 89.8,
+    "min": 25,
+    "max": 109,
+    "ic95": [
+     34.5,
+     77
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 57.1
+   }
+  },
+  "dificil_0.05": {
+   "pista": "dificil",
+   "mutacion": 0.05,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 32.5,
+    "p25": 23,
+    "p75": 37.3,
+    "min": 16,
+    "max": 102,
+    "ic95": [
+     23.5,
+     36.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 34.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 33,
+    "p25": 23,
+    "p75": 38.5,
+    "min": 16,
+    "max": 102,
+    "ic95": [
+     23.5,
+     37.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 35.4
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 63.5,
+    "p25": 55.3,
+    "p75": 78.5,
+    "min": 42,
+    "max": 169,
+    "ic95": [
+     56.5,
+     77.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 74.4
+   }
+  },
+  "dificil_0.1": {
+   "pista": "dificil",
+   "mutacion": 0.1,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 52.8,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     25,
+     49
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 58.3,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     24,
+     51
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 41.3
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 16,
+    "tasa": 0.8,
+    "mediana": 130,
+    "p25": 75.5,
+    "p75": 192.3,
+    "min": 30,
+    "max": 196,
+    "ic95": [
+     79,
+     186
+    ],
+    "tasa_ic95": [
+     0.584,
+     0.919
+    ],
+    "media_exitos": 110.3
+   }
+  },
+  "dificil_0.2": {
+   "pista": "dificil",
+   "mutacion": 0.2,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 43.5,
+    "p25": 32.8,
+    "p75": 59,
+    "min": 12,
+    "max": 218,
+    "ic95": [
+     33.5,
+     55.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 56.9
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 44,
+    "p25": 32.8,
+    "p75": 61.3,
+    "min": 12,
+    "max": 289,
+    "ic95": [
+     33.5,
+     57
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 62.9
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 4,
+    "tasa": 0.2,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 121,
+    "max": 217,
+    "ic95": [
+     null,
+     ">300"
+    ],
+    "tasa_ic95": [
+     0.081,
+     0.416
+    ],
+    "media_exitos": 167.5
+   }
+  },
+  "dificil_0.4": {
+   "pista": "dificil",
+   "mutacion": 0.4,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 38,
+    "p25": 26,
+    "p75": 48.8,
+    "min": 17,
+    "max": 173,
+    "ic95": [
+     26.5,
+     45.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 48.9
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 39.5,
+    "p25": 26.8,
+    "p75": 55.3,
+    "min": 17,
+    "max": 229,
+    "ic95": [
+     30,
+     49
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 66.5
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 2,
+    "tasa": 0.1,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 128,
+    "max": 269,
+    "ic95": [
+     null,
+     ">300"
+    ],
+    "tasa_ic95": [
+     0.028,
+     0.301
+    ],
+    "media_exitos": 198.5
+   }
+  }
+ },
+ "red": {
+  "media_3": {
+   "pista": "media",
+   "ocultas": 3,
+   "pesos": 35,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 25.5,
+    "p25": 16.5,
+    "p75": 43,
+    "min": 11,
+    "max": 273,
+    "ic95": [
+     17.5,
+     37.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 45
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 27,
+    "p25": 16.5,
+    "p75": 58.5,
+    "min": 11,
+    "max": 273,
+    "ic95": [
+     17.5,
+     46
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 43.8
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 49,
+    "p25": 37,
+    "p75": 104.5,
+    "min": 27,
+    "max": 253,
+    "ic95": [
+     38,
+     95
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 66.8
+   }
+  },
+  "media_5": {
+   "pista": "media",
+   "ocultas": 5,
+   "pesos": 57,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 20,
+    "p25": 12.8,
+    "p75": 35.5,
+    "min": 9,
+    "max": 262,
+    "ic95": [
+     14.5,
+     31
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 42.7
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 21.5,
+    "p25": 16.8,
+    "p75": 38.5,
+    "min": 11,
+    "max": 267,
+    "ic95": [
+     17,
+     36.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 45.4
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 43.5,
+    "p25": 34,
+    "p75": 60.5,
+    "min": 21,
+    "max": 193,
+    "ic95": [
+     36.5,
+     52.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 57.5
+   }
+  },
+  "media_10": {
+   "pista": "media",
+   "ocultas": 10,
+   "pesos": 112,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 23.8,
+    "min": 6,
+    "max": 56,
+    "ic95": [
+     12.5,
+     21
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 18.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 26.8,
+    "min": 6,
+    "max": 78,
+    "ic95": [
+     12.5,
+     24.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 20.3
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 44,
+    "p25": 30.8,
+    "p75": 57.5,
+    "min": 23,
+    "max": 95,
+    "ic95": [
+     31.5,
+     53
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 44.9
+   }
+  },
+  "media_20": {
+   "pista": "media",
+   "ocultas": 20,
+   "pesos": 222,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 17,
+    "p25": 11,
+    "p75": 29.8,
+    "min": 5,
+    "max": 292,
+    "ic95": [
+     11,
+     29
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 38.8
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 19.5,
+    "p25": 11,
+    "p75": 31.8,
+    "min": 5,
+    "max": 292,
+    "ic95": [
+     11,
+     29
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40.3
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 16,
+    "tasa": 0.8,
+    "mediana": 68,
+    "p25": 34,
+    "p75": 83.3,
+    "min": 23,
+    "max": 84,
+    "ic95": [
+     39,
+     79
+    ],
+    "tasa_ic95": [
+     0.584,
+     0.919
+    ],
+    "media_exitos": 52.9
+   }
+  },
+  "media_40": {
+   "pista": "media",
+   "ocultas": 40,
+   "pesos": 442,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 17,
+    "p25": 13.3,
+    "p75": 22.3,
+    "min": 5,
+    "max": 35,
+    "ic95": [
+     15,
+     21.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 17.5
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 17,
+    "p25": 13.3,
+    "p75": 23,
+    "min": 5,
+    "max": 36,
+    "ic95": [
+     15,
+     21.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 17.8
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 17,
+    "tasa": 0.85,
+    "mediana": 61,
+    "p25": 49.8,
+    "p75": 79.3,
+    "min": 19,
+    "max": 108,
+    "ic95": [
+     51.5,
+     72.5
+    ],
+    "tasa_ic95": [
+     0.64,
+     0.948
+    ],
+    "media_exitos": 58.4
+   }
+  },
+  "dificil_3": {
+   "pista": "dificil",
+   "ocultas": 3,
+   "pesos": 35,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 39,
+    "p25": 28.8,
+    "p75": 67.3,
+    "min": 19,
+    "max": 213,
+    "ic95": [
+     29,
+     60
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 53.2
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 39,
+    "p25": 28.8,
+    "p75": 86.8,
+    "min": 19,
+    "max": 218,
+    "ic95": [
+     29,
+     79.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 56.7
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 99.5,
+    "p25": 56.3,
+    "p75": 145.3,
+    "min": 33,
+    "max": 181,
+    "ic95": [
+     57.5,
+     135
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 92.7
+   }
+  },
+  "dificil_5": {
+   "pista": "dificil",
+   "ocultas": 5,
+   "pesos": 57,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 40,
+    "p25": 31.8,
+    "p75": 46.3,
+    "min": 15,
+    "max": 56,
+    "ic95": [
+     34,
+     45.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 39.6
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 42,
+    "p25": 35.8,
+    "p75": 52.5,
+    "min": 15,
+    "max": 56,
+    "ic95": [
+     36.5,
+     49.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 41.7
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 82,
+    "p25": 69,
+    "p75": 109.3,
+    "min": 53,
+    "max": 162,
+    "ic95": [
+     70.5,
+     104
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 90.5
+   }
+  },
+  "dificil_10": {
+   "pista": "dificil",
+   "ocultas": 10,
+   "pesos": 112,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 52.8,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     25,
+     49
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 58.3,
+    "min": 12,
+    "max": 135,
+    "ic95": [
+     25,
+     51
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 41.3
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 16,
+    "tasa": 0.8,
+    "mediana": 130,
+    "p25": 75.5,
+    "p75": 192.3,
+    "min": 30,
+    "max": 196,
+    "ic95": [
+     79,
+     186
+    ],
+    "tasa_ic95": [
+     0.584,
+     0.919
+    ],
+    "media_exitos": 110.3
+   }
+  },
+  "dificil_20": {
+   "pista": "dificil",
+   "ocultas": 20,
+   "pesos": 222,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 34.5,
+    "p25": 24.3,
+    "p75": 83.8,
+    "min": 5,
+    "max": 261,
+    "ic95": [
+     25.5,
+     74
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 61.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 34.5,
+    "p25": 24.3,
+    "p75": 122.5,
+    "min": 5,
+    "max": 300,
+    "ic95": [
+     25.5,
+     97
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 72.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 12,
+    "tasa": 0.6,
+    "mediana": 211,
+    "p25": 117.5,
+    "p75": null,
+    "min": 18,
+    "max": 300,
+    "ic95": [
+     124.5,
+     ">300"
+    ],
+    "tasa_ic95": [
+     0.387,
+     0.781
+    ],
+    "media_exitos": 136.1
+   }
+  },
+  "dificil_40": {
+   "pista": "dificil",
+   "ocultas": 40,
+   "pesos": 442,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 33.5,
+    "p25": 28.3,
+    "p75": 47.3,
+    "min": 17,
+    "max": 65,
+    "ic95": [
+     29,
+     45
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 35.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 18,
+    "tasa": 0.9,
+    "mediana": 34.5,
+    "p25": 28.3,
+    "p75": 51.8,
+    "min": 22,
+    "max": 77,
+    "ic95": [
+     29,
+     48
+    ],
+    "tasa_ic95": [
+     0.699,
+     0.972
+    ],
+    "media_exitos": 37.2
+   },
+   "mitad": {
+    "n": 20,
+    "exito": 1,
+    "tasa": 0.05,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 157,
+    "max": 157,
+    "ic95": [
+     null,
+     ">300"
+    ],
+    "tasa_ic95": [
+     0.009,
+     0.236
+    ],
+    "media_exitos": 157
+   }
+  }
+ },
+ "aleatoria": {
+  "facil": {
+   "evaluaciones": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 12,
+    "p25": 8.5,
+    "p75": 22.3,
+    "min": 2,
+    "max": 59,
+    "ic95": [
+     9.5,
+     21
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 19.7
+   },
+   "generacionesEquivalentes50": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 1,
+    "min": 1,
+    "max": 2,
+    "ic95": [
+     1,
+     1
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.2
+   }
+  },
+  "media": {
+   "evaluaciones": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 11095,
+    "p25": 2512.8,
+    "p75": 18637.3,
+    "min": 218,
+    "max": 39849,
+    "ic95": [
+     2714.5,
+     17462.8
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 13315.2
+   },
+   "generacionesEquivalentes50": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 222,
+    "p25": 50.8,
+    "p75": 373.5,
+    "min": 5,
+    "max": 797,
+    "ic95": [
+     55,
+     350
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 266.8
+   }
+  },
+  "dificil": {
+   "evaluaciones": {
+    "n": 20,
+    "exito": 5,
+    "tasa": 0.25,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 2862,
+    "max": 33587,
+    "ic95": [
+     null,
+     ">50000"
+    ],
+    "tasa_ic95": [
+     0.112,
+     0.469
+    ],
+    "media_exitos": 21667
+   },
+   "generacionesEquivalentes50": {
+    "n": 20,
+    "exito": 5,
+    "tasa": 0.25,
+    "mediana": null,
+    "p25": null,
+    "p75": null,
+    "min": 58,
+    "max": 672,
+    "ic95": [
+     null,
+     ">1000"
+    ],
+    "tasa_ic95": [
+     0.112,
+     0.469
+    ],
+    "media_exitos": 433.8
+   }
+  }
+ },
+ "transferencia": [
+  {
+   "entrenada": "facil",
+   "probada": "facil",
+   "vuelta1": 1,
+   "cinco": 0.15,
+   "progresoMediano": 1.828
+  },
+  {
+   "entrenada": "facil",
+   "probada": "media",
+   "vuelta1": 0,
+   "cinco": 0,
+   "progresoMediano": 0.038
+  },
+  {
+   "entrenada": "facil",
+   "probada": "dificil",
+   "vuelta1": 0,
+   "cinco": 0,
+   "progresoMediano": 0.015
+  },
+  {
+   "entrenada": "media",
+   "probada": "facil",
+   "vuelta1": 0.95,
+   "cinco": 0.95,
+   "progresoMediano": 5
+  },
+  {
+   "entrenada": "media",
+   "probada": "media",
+   "vuelta1": 0.95,
+   "cinco": 0.5,
+   "progresoMediano": 4.696
+  },
+  {
+   "entrenada": "media",
+   "probada": "dificil",
+   "vuelta1": 0,
+   "cinco": 0,
+   "progresoMediano": 0.038
+  },
+  {
+   "entrenada": "dificil",
+   "probada": "facil",
+   "vuelta1": 1,
+   "cinco": 1,
+   "progresoMediano": 5
+  },
+  {
+   "entrenada": "dificil",
+   "probada": "media",
+   "vuelta1": 0.25,
+   "cinco": 0.15,
+   "progresoMediano": 0.473
+  },
+  {
+   "entrenada": "dificil",
+   "probada": "dificil",
+   "vuelta1": 0.75,
+   "cinco": 0.15,
+   "progresoMediano": 1.567
+  }
+ ],
+ "curvas": {},
+ "dosVueltas": {
+  "facil": {
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 2,
+    "min": 1,
+    "max": 3,
+    "ic95": [
+     1,
+     2
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 1,
+    "p25": 1,
+    "p75": 2,
+    "min": 1,
+    "max": 3,
+    "ic95": [
+     1,
+     2
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 1.4
+   },
+   "final5vueltas": 10,
+   "final5vueltas_1vuelta": 3,
+   "vuelta1Final": 7.6,
+   "vuelta1Final_1vuelta": 7.6,
+   "segundaVueltaFinal": 7.1,
+   "final5vueltas_ic95": [
+    0.299,
+    0.701
+   ],
+   "final5vueltas_1vuelta_ic95": [
+    0.052,
+    0.36
+   ]
+  },
+  "media": {
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 23.8,
+    "min": 6,
+    "max": 56,
+    "ic95": [
+     12.5,
+     21
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 18.4
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 19,
+    "tasa": 0.95,
+    "mediana": 16,
+    "p25": 11,
+    "p75": 26.8,
+    "min": 6,
+    "max": 68,
+    "ic95": [
+     12.5,
+     24.5
+    ],
+    "tasa_ic95": [
+     0.764,
+     0.991
+    ],
+    "media_exitos": 19.8
+   },
+   "final5vueltas": 14,
+   "final5vueltas_1vuelta": 10,
+   "vuelta1Final": 11.3,
+   "vuelta1Final_1vuelta": 11,
+   "segundaVueltaFinal": 10.8,
+   "final5vueltas_ic95": [
+    0.481,
+    0.855
+   ],
+   "final5vueltas_1vuelta_ic95": [
+    0.299,
+    0.701
+   ]
+  },
+  "dificil": {
+   "corridas": 20,
+   "primeraVuelta": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 52.8,
+    "min": 8,
+    "max": 132,
+    "ic95": [
+     25,
+     46
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40
+   },
+   "confiable": {
+    "n": 20,
+    "exito": 20,
+    "tasa": 1,
+    "mediana": 31,
+    "p25": 23.5,
+    "p75": 56.5,
+    "min": 12,
+    "max": 133,
+    "ic95": [
+     24,
+     49.5
+    ],
+    "tasa_ic95": [
+     0.839,
+     1
+    ],
+    "media_exitos": 40.7
+   },
+   "final5vueltas": 6,
+   "final5vueltas_1vuelta": 2,
+   "vuelta1Final": 15.3,
+   "vuelta1Final_1vuelta": 15.3,
+   "segundaVueltaFinal": 14.8,
+   "final5vueltas_ic95": [
+    0.145,
+    0.519
+   ],
+   "final5vueltas_1vuelta_ic95": [
+    0.028,
+    0.301
+   ]
+  }
+ },
+ "pruebasCorreccion": {
+  "metodo": "Holm-Bonferroni",
+  "familia": 29,
+  "alfa": 0.05
+ }
+}

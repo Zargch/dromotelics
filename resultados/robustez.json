@@ -1,0 +1,716 @@
+[
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 1,
+  "unaVuelta_ic95": [
+   0.839,
+   1
+  ],
+  "cincoVueltas": 0.15,
+  "cincoVueltas_ic95": [
+   0.052,
+   0.36
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.895,
+  "unaVuelta_ic95": [
+   0.845,
+   0.93
+  ],
+  "cincoVueltas": 0.15,
+  "cincoVueltas_ic95": [
+   0.107,
+   0.206
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.735,
+  "unaVuelta_ic95": [
+   0.67,
+   0.791
+  ],
+  "cincoVueltas": 0.14,
+  "cincoVueltas_ic95": [
+   0.099,
+   0.195
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.52,
+  "unaVuelta_ic95": [
+   0.451,
+   0.588
+  ],
+  "cincoVueltas": 0.18,
+  "cincoVueltas_ic95": [
+   0.133,
+   0.239
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.165,
+  "unaVuelta_ic95": [
+   0.12,
+   0.223
+  ],
+  "cincoVueltas": 0.025,
+  "cincoVueltas_ic95": [
+   0.011,
+   0.057
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.06,
+  "unaVuelta_ic95": [
+   0.035,
+   0.102
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0.01,
+  "unaVuelta_ic95": [
+   0.003,
+   0.036
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 1,
+  "unaVuelta_ic95": [
+   0.839,
+   1
+  ],
+  "cincoVueltas": 0.45,
+  "cincoVueltas_ic95": [
+   0.258,
+   0.658
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.955,
+  "unaVuelta_ic95": [
+   0.917,
+   0.976
+  ],
+  "cincoVueltas": 0.445,
+  "cincoVueltas_ic95": [
+   0.378,
+   0.514
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.79,
+  "unaVuelta_ic95": [
+   0.728,
+   0.841
+  ],
+  "cincoVueltas": 0.34,
+  "cincoVueltas_ic95": [
+   0.278,
+   0.408
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.59,
+  "unaVuelta_ic95": [
+   0.521,
+   0.656
+  ],
+  "cincoVueltas": 0.19,
+  "cincoVueltas_ic95": [
+   0.142,
+   0.25
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.135,
+  "unaVuelta_ic95": [
+   0.094,
+   0.189
+  ],
+  "cincoVueltas": 0.005,
+  "cincoVueltas_ic95": [
+   0.001,
+   0.028
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.01,
+  "unaVuelta_ic95": [
+   0.003,
+   0.036
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ },
+ {
+  "pista": "facil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0,
+  "unaVuelta_ic95": [
+   0,
+   0.019
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 0.95,
+  "unaVuelta_ic95": [
+   0.764,
+   0.991
+  ],
+  "cincoVueltas": 0.5,
+  "cincoVueltas_ic95": [
+   0.299,
+   0.701
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.725,
+  "unaVuelta_ic95": [
+   0.659,
+   0.782
+  ],
+  "cincoVueltas": 0.455,
+  "cincoVueltas_ic95": [
+   0.387,
+   0.524
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.685,
+  "unaVuelta_ic95": [
+   0.618,
+   0.745
+  ],
+  "cincoVueltas": 0.44,
+  "cincoVueltas_ic95": [
+   0.373,
+   0.509
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.67,
+  "unaVuelta_ic95": [
+   0.602,
+   0.731
+  ],
+  "cincoVueltas": 0.43,
+  "cincoVueltas_ic95": [
+   0.363,
+   0.499
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.72,
+  "unaVuelta_ic95": [
+   0.654,
+   0.778
+  ],
+  "cincoVueltas": 0.335,
+  "cincoVueltas_ic95": [
+   0.273,
+   0.403
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.45,
+  "unaVuelta_ic95": [
+   0.383,
+   0.519
+  ],
+  "cincoVueltas": 0.195,
+  "cincoVueltas_ic95": [
+   0.146,
+   0.255
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0.205,
+  "unaVuelta_ic95": [
+   0.155,
+   0.266
+  ],
+  "cincoVueltas": 0.1,
+  "cincoVueltas_ic95": [
+   0.066,
+   0.149
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 0.9,
+  "unaVuelta_ic95": [
+   0.699,
+   0.972
+  ],
+  "cincoVueltas": 0.65,
+  "cincoVueltas_ic95": [
+   0.433,
+   0.819
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.825,
+  "unaVuelta_ic95": [
+   0.766,
+   0.871
+  ],
+  "cincoVueltas": 0.625,
+  "cincoVueltas_ic95": [
+   0.556,
+   0.689
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.765,
+  "unaVuelta_ic95": [
+   0.702,
+   0.818
+  ],
+  "cincoVueltas": 0.515,
+  "cincoVueltas_ic95": [
+   0.446,
+   0.583
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.69,
+  "unaVuelta_ic95": [
+   0.623,
+   0.75
+  ],
+  "cincoVueltas": 0.53,
+  "cincoVueltas_ic95": [
+   0.461,
+   0.598
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.67,
+  "unaVuelta_ic95": [
+   0.602,
+   0.731
+  ],
+  "cincoVueltas": 0.335,
+  "cincoVueltas_ic95": [
+   0.273,
+   0.403
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.57,
+  "unaVuelta_ic95": [
+   0.501,
+   0.637
+  ],
+  "cincoVueltas": 0.19,
+  "cincoVueltas_ic95": [
+   0.142,
+   0.25
+  ]
+ },
+ {
+  "pista": "media",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0.19,
+  "unaVuelta_ic95": [
+   0.142,
+   0.25
+  ],
+  "cincoVueltas": 0.035,
+  "cincoVueltas_ic95": [
+   0.017,
+   0.07
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 0.75,
+  "unaVuelta_ic95": [
+   0.531,
+   0.888
+  ],
+  "cincoVueltas": 0.15,
+  "cincoVueltas_ic95": [
+   0.052,
+   0.36
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.695,
+  "unaVuelta_ic95": [
+   0.628,
+   0.755
+  ],
+  "cincoVueltas": 0.105,
+  "cincoVueltas_ic95": [
+   0.07,
+   0.155
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.615,
+  "unaVuelta_ic95": [
+   0.546,
+   0.68
+  ],
+  "cincoVueltas": 0.06,
+  "cincoVueltas_ic95": [
+   0.035,
+   0.102
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.47,
+  "unaVuelta_ic95": [
+   0.402,
+   0.539
+  ],
+  "cincoVueltas": 0.065,
+  "cincoVueltas_ic95": [
+   0.038,
+   0.108
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.32,
+  "unaVuelta_ic95": [
+   0.259,
+   0.388
+  ],
+  "cincoVueltas": 0.005,
+  "cincoVueltas_ic95": [
+   0.001,
+   0.028
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.22,
+  "unaVuelta_ic95": [
+   0.168,
+   0.282
+  ],
+  "cincoVueltas": 0.01,
+  "cincoVueltas_ic95": [
+   0.003,
+   0.036
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 1 vuelta",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0,
+  "unaVuelta_ic95": [
+   0,
+   0.019
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0,
+  "pruebas": 20,
+  "unaVuelta": 0.85,
+  "unaVuelta_ic95": [
+   0.64,
+   0.948
+  ],
+  "cincoVueltas": 0.3,
+  "cincoVueltas_ic95": [
+   0.145,
+   0.519
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.001,
+  "pruebas": 200,
+  "unaVuelta": 0.64,
+  "unaVuelta_ic95": [
+   0.571,
+   0.703
+  ],
+  "cincoVueltas": 0.225,
+  "cincoVueltas_ic95": [
+   0.173,
+   0.288
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.003,
+  "pruebas": 200,
+  "unaVuelta": 0.58,
+  "unaVuelta_ic95": [
+   0.511,
+   0.646
+  ],
+  "cincoVueltas": 0.2,
+  "cincoVueltas_ic95": [
+   0.15,
+   0.261
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "pesos",
+  "ruido": 0.01,
+  "pruebas": 200,
+  "unaVuelta": 0.465,
+  "unaVuelta_ic95": [
+   0.397,
+   0.534
+  ],
+  "cincoVueltas": 0.12,
+  "cincoVueltas_ic95": [
+   0.082,
+   0.172
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.02,
+  "pruebas": 200,
+  "unaVuelta": 0.445,
+  "unaVuelta_ic95": [
+   0.378,
+   0.514
+  ],
+  "cincoVueltas": 0.07,
+  "cincoVueltas_ic95": [
+   0.042,
+   0.114
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.05,
+  "pruebas": 200,
+  "unaVuelta": 0.405,
+  "unaVuelta_ic95": [
+   0.339,
+   0.474
+  ],
+  "cincoVueltas": 0.08,
+  "cincoVueltas_ic95": [
+   0.05,
+   0.126
+  ]
+ },
+ {
+  "pista": "dificil",
+  "experimento": "aptitud 2 vueltas",
+  "tipo": "sensores",
+  "ruido": 0.1,
+  "pruebas": 200,
+  "unaVuelta": 0.005,
+  "unaVuelta_ic95": [
+   0.001,
+   0.028
+  ],
+  "cincoVueltas": 0,
+  "cincoVueltas_ic95": [
+   0,
+   0.019
+  ]
+ }
+]

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto IA</title>
+<style>
+  :root { --bg:#0e1116; --panel:#161b22; --line:#2a313c; --text:#e6edf3; --dim:#8b949e; --acc:#3fb950; --warn:#f0b72f; --road:#2b303a; --wall:#6e7681; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.4 system-ui, Segoe UI, sans-serif; display:flex; gap:16px; padding:16px; flex-wrap:wrap; }
+  canvas#pista { background:#11151b; border:1px solid var(--line); border-radius:10px; max-width:100%; height:auto; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px; width:300px; display:flex; flex-direction:column; gap:10px; }
+  h1 { font-size:17px; margin:0; }
+  .stat { display:flex; justify-content:space-between; border-bottom:1px solid var(--line); padding:3px 0; }
+  .stat b { font-variant-numeric: tabular-nums; }
+  .hit { background:#12301b; border:1px solid var(--acc); color:var(--acc); border-radius:8px; padding:8px; display:none; }
+  label { color:var(--dim); font-size:12px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  input[type=number] { width:80px; background:#0d1117; color:var(--text); border:1px solid var(--line); border-radius:6px; padding:4px; }
+  .row { display:flex; gap:6px; flex-wrap:wrap; }
+  button { background:#21262d; color:var(--text); border:1px solid var(--line); border-radius:6px; padding:6px 10px; cursor:pointer; }
+  button.on { background:#1f6feb; border-color:#1f6feb; }
+  canvas#graf { background:#0d1117; border:1px solid var(--line); border-radius:6px; width:100%; }
+  small { color:var(--dim); }
+</style>
+</head>
+<body>
+<canvas id="pista" width="1000" height="650"></canvas>
+<div class="panel">
+  <h1>Auto IA · neuroevolución</h1>
+  <div class="stat"><span>Generación</span><b id="sGen">1</b></div>
+  <div class="stat"><span>Autos vivos</span><b id="sVivos">0</b></div>
+  <div class="stat"><span>Mejor progreso (esta gen)</span><b id="sProg">0%</b></div>
+  <div class="stat"><span>Récord de progreso</span><b id="sRec">0%</b></div>
+  <div class="stat"><span>Completaron vuelta (gen ant.)</span><b id="sFin">0</b></div>
+  <div class="stat"><span>Mejor tiempo de vuelta</span><b id="sLap">—</b></div>
+  <div class="hit" id="hit"></div>
+  <canvas id="graf" width="272" height="110"></canvas>
+  <small>Verde: mejor progreso por generación · Gris: promedio</small>
+  <label>Velocidad
+    <span class="row" id="vel">
+      <button data-v="1" class="on">1x</button><button data-v="5">5x</button><button data-v="30">30x</button><button data-v="0">Turbo</button>
+    </span>
+  </label>
+  <label>Pista <select id="iTrack"><option value="facil">Fácil</option><option value="media" selected>Media</option><option value="dificil">Difícil</option></select></label>
+  <label>Población <input id="iPop" type="number" value="50" min="4" max="500"></label>
+  <label>Tasa de mutación <input id="iMut" type="number" value="0.1" step="0.05" min="0" max="1"></label>
+  <label>Semilla <input id="iSeed" type="number" value="1"></label>
+  <div class="row"><button id="bReset">Reiniciar</button><button id="bPausa">Pausa</button><button id="bCap">Guardar captura</button></div>
+  <small>Cada auto tiene 7 sensores (rayos) + su velocidad → red 8·10·2 → dirección y acelerador. Los mejores de cada generación se cruzan y mutan.</small>
+</div>
+<script src="sim.js"></script>
+<script>
+const cv = document.getElementById('pista'), ctx = cv.getContext('2d');
+const gc = document.getElementById('graf'), gx = gc.getContext('2d');
+let track;
+const $ = id => document.getElementById(id);
+let ev, hist, record, firstLap, speed = 1, paused = false;
+
+// Pre-render de la pista
+const bg = document.createElement('canvas'); bg.width = cv.width; bg.height = cv.height;
+function drawTrack() {
+  const t = Sim.TRACKS[$('iTrack').value];
+  track = Sim.buildTrack(t.control, t.halfWidth, 10);
+  const b = bg.getContext('2d');
+  b.fillStyle = '#11151b'; b.fillRect(0, 0, bg.width, bg.height); // opaco: borra el cuadro anterior
+  const path = arr => { b.beginPath(); arr.forEach((p, i) => i ? b.lineTo(p[0], p[1]) : b.moveTo(p[0], p[1])); b.closePath(); };
+  b.lineJoin = 'round';
+  path(track.pts); b.strokeStyle = '#2b303a'; b.lineWidth = track.halfWidth * 2; b.stroke();
+  b.setLineDash([8, 10]); b.strokeStyle = '#3a414d'; b.lineWidth = 1.5; b.stroke(); b.setLineDash([]);
+  path(track.left); b.strokeStyle = '#6e7681'; b.lineWidth = 2; b.stroke();
+  path(track.right); b.stroke();
+  // meta
+  const L = track.left[0], R = track.right[0];
+  b.strokeStyle = '#fff'; b.lineWidth = 4; b.setLineDash([4, 4]);
+  b.beginPath(); b.moveTo(L[0], L[1]); b.lineTo(R[0], R[1]); b.stroke(); b.setLineDash([]);
+}
+
+function reset() {
+  drawTrack();
+  ev = new Sim.Evolution({ track, seed: +$('iSeed').value || 1, pop: +$('iPop').value || 50, mutRate: +$('iMut').value });
+  hist = []; record = 0; firstLap = null;
+  $('hit').style.display = 'none'; $('sLap').textContent = '—'; $('sFin').textContent = '0';
+}
+
+function endGen() {
+  const s = ev.endGen();
+  hist.push(s);
+  record = Math.max(record, s.bestProgress);
+  $('sFin').textContent = s.finishers;
+  if (s.bestLapTime) $('sLap').textContent = s.bestLapTime.toFixed(2) + ' s';
+  if (firstLap == null && s.finishers > 0) {
+    firstLap = s.gen;
+    $('hit').style.display = 'block';
+    $('hit').textContent = `¡Primera vuelta completa en la generación ${s.gen}!`;
+  }
+}
+
+function drawCar(c, best) {
+  ctx.save(); ctx.translate(c.x, c.y); ctx.rotate(c.a);
+  ctx.fillStyle = best ? '#3fb950' : c.alive ? 'rgba(88,166,255,.55)' : 'rgba(248,81,73,.25)';
+  if (c.finished) ctx.fillStyle = '#f0b72f';
+  ctx.fillRect(-9, -5, 18, 10);
+  ctx.restore();
+}
+
+function draw() {
+  ctx.drawImage(bg, 0, 0);
+  let best = null;
+  for (const c of ev.cars) if (!best || c.best > best.best) best = c;
+  for (const c of ev.cars) if (c !== best) drawCar(c, false);
+  if (best) {
+    ctx.strokeStyle = 'rgba(63,185,80,.5)'; ctx.lineWidth = 1;
+    Sim.RAY_ANGLES.forEach((ang, r) => {
+      const a = best.a + ang, d = best.rays[r];
+      ctx.beginPath(); ctx.moveTo(best.x, best.y); ctx.lineTo(best.x + Math.cos(a) * d, best.y + Math.sin(a) * d); ctx.stroke();
+    });
+    drawCar(best, true);
+  }
+  const vivos = ev.cars.filter(c => c.alive && !c.finished).length;
+  $('sGen').textContent = ev.gen;
+  $('sVivos').textContent = vivos + ' / ' + ev.pop;
+  $('sProg').textContent = (Math.min(1, (best ? best.best : 0) / track.length) * 100).toFixed(1) + '%';
+  $('sRec').textContent = (record * 100).toFixed(1) + '%';
+  drawGraph();
+}
+
+function drawGraph() {
+  const W = gc.width, H = gc.height;
+  gx.clearRect(0, 0, W, H);
+  gx.strokeStyle = '#21262d'; gx.beginPath(); gx.moveTo(0, 5); gx.lineTo(W, 5); gx.stroke();
+  if (hist.length < 1) return;
+  const n = Math.max(10, hist.length), line = (key, col) => {
+    gx.strokeStyle = col; gx.lineWidth = 1.5; gx.beginPath();
+    hist.forEach((s, i) => { const x = (i / (n - 1)) * W, y = H - 5 - s[key] * (H - 10); i ? gx.lineTo(x, y) : gx.moveTo(x, y); });
+    gx.stroke();
+  };
+  line('avgProgress', '#6e7681'); line('bestProgress', '#3fb950');
+}
+
+function loop() {
+  if (!paused) {
+    if (speed === 0) { // turbo: generaciones completas sin dibujar, ~30 ms por cuadro
+      const t = performance.now();
+      while (performance.now() - t < 30) { if (!ev.tick()) endGen(); }
+    } else {
+      for (let k = 0; k < speed; k++) if (!ev.tick()) endGen();
+    }
+  }
+  draw();
+  requestAnimationFrame(loop);
+}
+
+document.querySelectorAll('#vel button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#vel button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); speed = +b.dataset.v;
+});
+$('bReset').onclick = reset;
+$('iTrack').onchange = reset;
+$('bPausa').onclick = () => { paused = !paused; $('bPausa').textContent = paused ? 'Seguir' : 'Pausa'; };
+// Captura: pista con autos + franja con los datos de la generación → figuras/captura_<pista>_gen<N>.png
+$('bCap').onclick = async () => {
+  const c = document.createElement('canvas'); c.width = cv.width; c.height = cv.height + 60;
+  const x = c.getContext('2d');
+  x.fillStyle = '#0e1116'; x.fillRect(0, 0, c.width, c.height); x.drawImage(cv, 0, 0);
+  x.fillStyle = '#e6edf3'; x.font = '600 22px Segoe UI, sans-serif';
+  const pista = $('iTrack').selectedOptions[0].textContent;
+  x.fillText(`Pista ${pista} · generación ${ev.gen} · vivos ${$('sVivos').textContent} · mejor progreso ${$('sProg').textContent} · récord ${$('sRec').textContent}`, 20, cv.height + 38);
+  const nombre = `captura_${$('iTrack').value}_gen${ev.gen}.png`;
+  await fetch('/guardar?nombre=' + nombre, { method: 'POST', body: c.toDataURL('image/png') });
+  $('bCap').textContent = 'Guardada ✓';
+  setTimeout(() => $('bCap').textContent = 'Guardar captura', 1500);
+};
+reset(); loop();
+</script>
+</body>
+</html>

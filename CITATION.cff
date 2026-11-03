@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si usas este código o sus datos, cítalo así."
+title: "Dromotelics: ¿cuántas generaciones necesita una IA para aprender a conducir? Estudio de neuroevolución en circuitos 2D"
+type: software
+authors:
+  - family-names: "Zarate"
+    given-names: "Carlos"
+    alias: "Zargch"
+version: "1.1.0"
+license: MIT
+repository-code: "https://github.com/Zargch/dromotelics"
+url: "https://zargch.github.io/dromotelics/"
+abstract: >-
+  Estudio experimental de neuroevolución en un entorno simulado 2D con física simplificada.
+  Un algoritmo genético evoluciona una red neuronal de 112 pesos con 7 sensores de distancia
+  para conducir un vehículo simulado en tres circuitos de dificultad creciente (620 corridas
+  con semilla fija). Incluye el simulador, los datos crudos, el análisis estadístico y el artículo.
+keywords:
+  - neuroevolución
+  - algoritmo genético
+  - red neuronal
+  - simulación 2D
+  - sobreajuste
+  - robustez

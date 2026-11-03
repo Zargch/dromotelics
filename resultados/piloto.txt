@@ -1,0 +1,106 @@
+Pista: 3135 px, radio mínimo 31.9 px, medio ancho 30
+pop 20 semilla 1: 1ª vuelta gen 14, 50% gen 61
+pop 20 semilla 2: 1ª vuelta gen 101, 50% gen 111
+pop 20 semilla 3: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 4: 1ª vuelta gen 175, 50% gen —
+pop 20 semilla 5: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 6: 1ª vuelta gen 52, 50% gen —
+pop 20 semilla 7: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 8: 1ª vuelta gen 9, 50% gen 40
+pop 20 semilla 9: 1ª vuelta gen 18, 50% gen 38
+pop 20 semilla 10: 1ª vuelta gen 21, 50% gen 35
+pop 20 semilla 11: 1ª vuelta gen 12, 50% gen 17
+pop 20 semilla 12: 1ª vuelta gen 8, 50% gen 27
+pop 20 semilla 13: 1ª vuelta gen 71, 50% gen 133
+pop 20 semilla 14: 1ª vuelta gen 7, 50% gen 15
+pop 20 semilla 15: 1ª vuelta gen 26, 50% gen 31
+pop 20 semilla 16: 1ª vuelta gen 259, 50% gen —
+pop 20 semilla 17: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 18: 1ª vuelta gen 11, 50% gen 23
+pop 20 semilla 19: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 20: 1ª vuelta gen 14, 50% gen 26
+pop 20 semilla 21: 1ª vuelta gen —, 50% gen —
+pop 20 semilla 22: 1ª vuelta gen 16, 50% gen 97
+pop 20 semilla 23: 1ª vuelta gen 17, 50% gen 23
+pop 20 semilla 24: 1ª vuelta gen 19, 50% gen 40
+pop 20 semilla 25: 1ª vuelta gen 15, 50% gen 26
+pop 20 semilla 26: 1ª vuelta gen 40, 50% gen 55
+pop 20 semilla 27: 1ª vuelta gen 26, 50% gen 54
+pop 20 semilla 28: 1ª vuelta gen 64, 50% gen 81
+pop 20 semilla 29: 1ª vuelta gen 63, 50% gen —
+pop 20 semilla 30: 1ª vuelta gen 47, 50% gen —
+pop 50 semilla 1: 1ª vuelta gen 26, 50% gen 46
+pop 50 semilla 2: 1ª vuelta gen 14, 50% gen 39
+pop 50 semilla 3: 1ª vuelta gen 15, 50% gen 31
+pop 50 semilla 4: 1ª vuelta gen 10, 50% gen 28
+pop 50 semilla 5: 1ª vuelta gen 16, 50% gen 25
+pop 50 semilla 6: 1ª vuelta gen 56, 50% gen 95
+pop 50 semilla 7: 1ª vuelta gen 27, 50% gen 60
+pop 50 semilla 8: 1ª vuelta gen 18, 50% gen 47
+pop 50 semilla 9: 1ª vuelta gen 6, 50% gen 30
+pop 50 semilla 10: 1ª vuelta gen 11, 50% gen 43
+pop 50 semilla 11: 1ª vuelta gen 10, 50% gen 46
+pop 50 semilla 12: 1ª vuelta gen 14, 50% gen 49
+pop 50 semilla 13: 1ª vuelta gen 29, 50% gen 57
+pop 50 semilla 14: 1ª vuelta gen 10, 50% gen 24
+pop 50 semilla 15: 1ª vuelta gen 23, 50% gen 86
+pop 50 semilla 16: 1ª vuelta gen 19, 50% gen 59
+pop 50 semilla 17: 1ª vuelta gen —, 50% gen —
+pop 50 semilla 18: 1ª vuelta gen 16, 50% gen 31
+pop 50 semilla 19: 1ª vuelta gen 19, 50% gen 45
+pop 50 semilla 20: 1ª vuelta gen 11, 50% gen 33
+pop 50 semilla 21: 1ª vuelta gen 22, 50% gen —
+pop 50 semilla 22: 1ª vuelta gen 6, 50% gen 23
+pop 50 semilla 23: 1ª vuelta gen 4, 50% gen 23
+pop 50 semilla 24: 1ª vuelta gen 59, 50% gen 251
+pop 50 semilla 25: 1ª vuelta gen 7, 50% gen 47
+pop 50 semilla 26: 1ª vuelta gen 33, 50% gen 70
+pop 50 semilla 27: 1ª vuelta gen 30, 50% gen 61
+pop 50 semilla 28: 1ª vuelta gen 19, 50% gen 28
+pop 50 semilla 29: 1ª vuelta gen 12, 50% gen 30
+pop 50 semilla 30: 1ª vuelta gen —, 50% gen —
+pop 100 semilla 1: 1ª vuelta gen 19, 50% gen 41
+pop 100 semilla 2: 1ª vuelta gen 8, 50% gen 64
+pop 100 semilla 3: 1ª vuelta gen 26, 50% gen 56
+pop 100 semilla 4: 1ª vuelta gen 5, 50% gen 30
+pop 100 semilla 5: 1ª vuelta gen 9, 50% gen 44
+pop 100 semilla 6: 1ª vuelta gen 14, 50% gen 43
+pop 100 semilla 7: 1ª vuelta gen 13, 50% gen 41
+pop 100 semilla 8: 1ª vuelta gen 18, 50% gen 50
+pop 100 semilla 9: 1ª vuelta gen 7, 50% gen 45
+pop 100 semilla 10: 1ª vuelta gen 8, 50% gen 29
+pop 100 semilla 11: 1ª vuelta gen 30, 50% gen 62
+pop 100 semilla 12: 1ª vuelta gen 20, 50% gen 72
+pop 100 semilla 13: 1ª vuelta gen 31, 50% gen —
+pop 100 semilla 14: 1ª vuelta gen 13, 50% gen 59
+pop 100 semilla 15: 1ª vuelta gen 2, 50% gen 47
+pop 100 semilla 16: 1ª vuelta gen 14, 50% gen 53
+pop 100 semilla 17: 1ª vuelta gen 18, 50% gen 37
+pop 100 semilla 18: 1ª vuelta gen 28, 50% gen 59
+pop 100 semilla 19: 1ª vuelta gen 11, 50% gen 31
+pop 100 semilla 20: 1ª vuelta gen 62, 50% gen —
+pop 100 semilla 21: 1ª vuelta gen 21, 50% gen 68
+pop 100 semilla 22: 1ª vuelta gen 8, 50% gen 40
+pop 100 semilla 23: 1ª vuelta gen 13, 50% gen 61
+pop 100 semilla 24: 1ª vuelta gen 24, 50% gen 50
+pop 100 semilla 25: 1ª vuelta gen 23, 50% gen 54
+pop 100 semilla 26: 1ª vuelta gen 10, 50% gen 38
+pop 100 semilla 27: 1ª vuelta gen 15, 50% gen 40
+pop 100 semilla 28: 1ª vuelta gen 15, 50% gen 34
+pop 100 semilla 29: 1ª vuelta gen 17, 50% gen 46
+pop 100 semilla 30: 1ª vuelta gen 18, 50% gen 52
+
+Tiempo total: 501.6 s
+
+== Población 20 ==
+  Primera vuelta completa : {"exito":"24/30","media":46,"mediana":21,"min":7,"p90":101,"max":259}
+  50% de autos completan  : {"exito":"19/30","media":49.1,"mediana":38,"min":15,"p90":97,"max":133}
+  Mejor tiempo de vuelta s: {"exito":"19/30","media":13.7,"mediana":13.4,"min":11.9,"p90":15,"max":16}
+== Población 50 ==
+  Primera vuelta completa : {"exito":"28/30","media":19.4,"mediana":16,"min":4,"p90":30,"max":59}
+  50% de autos completan  : {"exito":"27/30","media":52.1,"mediana":45,"min":23,"p90":70,"max":251}
+  Mejor tiempo de vuelta s: {"exito":"27/30","media":12.5,"mediana":12.6,"min":11.1,"p90":13.4,"max":14.2}
+== Población 100 ==
+  Primera vuelta completa : {"exito":"30/30","media":17.3,"mediana":15,"min":2,"p90":28,"max":62}
+  50% de autos completan  : {"exito":"28/30","media":48.1,"mediana":47,"min":29,"p90":62,"max":72}
+  Mejor tiempo de vuelta s: {"exito":"28/30","media":12.2,"mediana":12.1,"min":11.7,"p90":12.9,"max":13.2}
